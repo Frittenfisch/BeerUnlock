@@ -35,6 +35,15 @@ public class BierflaschenEntsperrung {
  * 
  * 
  */
+
+public void BierflaschenEntsperrung() //es is wichtig einen Construktor zu erstellen, sonst kannst du die Klasse später nicht aufrufen
+// der Constructor kann auch leer sein, und public, damit er auch evtl von anderen Instanzen aufgerufen werden kann
+//sollte er private sein, kann er nur von sich selber angerufen werden, was keinen sinn macht, weil Du den dann irgendwie aufrufen musst um zu starten
+//nur so am rande, Klassen/Objecte(die teil einer klasse sind) mit private konstruktor können immer nur 1mal bestehen, weil man sie nur von sich selbst aus anrufen kann(sowas nennt man Singleton)
+{
+
+}
+	
     public static void main(String[] args) {
         // PLATZHALTER FÜR unter - VOIDS
     }
