@@ -1,5 +1,7 @@
 
-package bierflaschen.entsperrung;
+package bierflaschen.entsperrung; // was macht das ?
+import java.util.*; //nützliche dinge
+import javax.swing.*; //gui-klassen
 
 /* Grundsätzliche Idee:
  * Nutzer drückt den Entsperren Button am Smartphone
@@ -12,13 +14,37 @@ package bierflaschen.entsperrung;
  * eventuell verschiedene Bierflaschen-Designs (Krombacher, Veltins, Flens (nur mit plop!), Bit, KöPi, Warsteiner, Duff Beer,
  *      etc...
  */
-public class BierflaschenEntsperrung {
 
+// musst dir angewühnen zu den meisten methoden und oder klassen JavaDoc Comments zu machen, die machst mit /** ok?
+// Diese JavaDoc comments werden von den meisten IDEs umgesetzt in eine API(advanced programmers interface), wodrin steht, was ein Programmierer wissen muss um mit deinem code zu arbeiten, ohne sich selbst in deinen Code einzulesen
+// Heißt soviel wie: Der inhalt einer Klasse is irrelevant, solange du eine API hast, kann jeder der will einfach damit arbeiten
+/**
+ * Dies ist ein Projekt für einen Androidunlockscreen in Form einer Bierflasche
+ * @author Frittenfisch
+ * 
+ */
+
+
+
+public class BierflaschenEntsperrung {
+/**
+ * Constructor
+ * static
+ * @param String[]
+ * @return void
+ * 
+ * 
+ */
     public static void main(String[] args) {
         // PLATZHALTER FÜR unter - VOIDS
     }
-    
-    void Entsperrung() {
+ /**
+  * Entsperrungsklasse
+  * @param none
+  * @return void
+  * 
+  */
+    public void Entsperrung() { //der einfachkeit halber visibility modifiers (private,protected, default, public) nich weglassen bitte
         double xber; // X-Koordinate der Berührung
         double yber; // Y-Koordinate der Berührung
         int k = 0; // k ist die Variable für den Zustand des Kronkorkens. 0=geschlossen (standard), 1=offen.
@@ -27,7 +53,7 @@ public class BierflaschenEntsperrung {
         double xent2 = 6;
         double yent2 = 6; // Koordinatenpaare ergeben 3 x 3 großes Feld, irgendwo hier muss die Berührung treffen
         while (k=0) {
-            if (xent1 <= xber <= xent2 && yent1 <= yber <= yent2) { //User streicht über richtiges Koordinatenpaar als Entsperrgegend
+            if ((xent1 <= xber && xber <= xent2) && (yent1 <= yber && yber <= yent2)) { //User streicht über richtiges Koordinatenpaar als Entsperrgegend
                 //Display wird entsperrt
                 k = 1;
             } else {
