@@ -48,7 +48,7 @@ public void BierflaschenEntsperrung() //es is wichtig einen Construktor zu erste
         // PLATZHALTER FÜR unter - VOIDS
     }
  /**
-  * Entsperrungsklasse
+  * Entsperrungsklasse blablablablabla
   * @param none
   * @return void
   * 
